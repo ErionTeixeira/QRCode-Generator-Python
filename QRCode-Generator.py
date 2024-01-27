@@ -37,7 +37,7 @@ def gera_qr_code():
     url = website_entry.get()
 
     if len(url) == 0:
-        messagebox.showinfo(title="Erro!", message="Favor insira uma URL válida")
+        messagebox.showinfo(title="Erro!", message="Favor insira uma URL válida") #Messagebox para erro
     else:
         opcao_escolhida = messagebox.askokcancel(
             title=url,
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     website_label = Label(text="URL:")
     website_label.grid(row=2, column=0)
 
-    # Entri
+    # Entradas
     website_entry = Entry(width=35)
     website_entry.grid(row=2, column=1, columnspan=2)
     website_entry.focus()
